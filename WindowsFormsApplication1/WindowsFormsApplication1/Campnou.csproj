@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BE86EF1-3C5C-4DD7-8785-7979974443B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccueilEve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccueilEve.Designer.cs">
+      <DependentUpon>AccueilEve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutPresse.cs" />
+    <Compile Include="AjoutPresse1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutPresse1.Designer.cs">
+      <DependentUpon>AjoutPresse1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chaissee.cs" />
+    <Compile Include="Chaisse.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Clcourbes.cs" />
+    <Compile Include="Clpresse.cs" />
+    <Compile Include="CodeActivity1.cs" />
+    <Compile Include="Coordonne_stade.cs" />
+    <Compile Include="Coordonne_zone.cs" />
+    <Compile Include="Countour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Countour.Designer.cs">
+      <DependentUpon>Countour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Countour2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Countour2.designer.cs">
+      <DependentUpon>Countour2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Courb.Designer.cs">
+      <DependentUpon>Courb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create.Designer.cs">
+      <DependentUpon>Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBconnection.cs" />
+    <Compile Include="Edition_stade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edition_stade.Designer.cs">
+      <DependentUpon>Edition_stade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evenement.cs" />
+    <Compile Include="Evenement1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evenement1.Designer.cs">
+      <DependentUpon>Evenement1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fonctioncs.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historique2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historique2.Designer.cs">
+      <DependentUpon>Historique2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pourcentage.cs" />
+    <Compile Include="Presse.cs" />
+    <Compile Include="Reser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reser.Designer.cs">
+      <DependentUpon>Reser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stade.cs" />
+    <Compile Include="Stadecr.cs" />
+    <Compile Include="Stadeplusc.cs" />
+    <Compile Include="Mouvements.cs" />
+    <Compile Include="Zone.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stade1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stade1.Designer.cs">
+      <DependentUpon>stade1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zone1.cs" />
+    <Compile Include="Zone3.cs" />
+    <Compile Include="Zonec.cs" />
+    <EmbeddedResource Include="AccueilEve.resx">
+      <DependentUpon>AccueilEve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutPresse1.resx">
+      <DependentUpon>AjoutPresse1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Countour.resx">
+      <DependentUpon>Countour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Countour2.resx">
+      <DependentUpon>Countour2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courb.resx">
+      <DependentUpon>Courb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create.resx">
+      <DependentUpon>Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edition_stade.resx">
+      <DependentUpon>Edition_stade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evenement1.resx">
+      <DependentUpon>Evenement1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historique2.resx">
+      <DependentUpon>Historique2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reser.resx">
+      <DependentUpon>Reser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stade1.resx">
+      <DependentUpon>stade1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stade.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stade_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Stade.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
